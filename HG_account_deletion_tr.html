@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>HizmetGetir — Hesap ve Veri Silme</title>
+<style>
+  :root { --bg:#f8fafc; --card:#ffffff; --text:#0f172a; --muted:#475569; --accent:#1E82FF; --border:#e2e8f0; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+  header { margin-bottom: 8px; }
+  h1 { font-size: 1.7rem; margin: 0 0 4px; }
+  .brand { color: var(--accent); font-weight: 700; }
+  .updated { color: var(--muted); font-size: .9rem; margin-bottom: 24px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+  }
+  h2 { font-size: 1.12rem; margin: 0 0 10px; }
+  p, li { color: var(--text); font-size: .98rem; }
+  ol, ul { padding-left: 20px; margin: 8px 0; }
+  li { margin-bottom: 6px; }
+  .muted { color: var(--muted); }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: .85rem; text-align: center; margin-top: 28px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><span class="brand">HizmetGetir</span> — Hesap ve Veri Silme</h1>
+    <div class="updated">Geliştirici: Muhammed Kasım Adıgüzel (HizmetGetir / APRYCO)</div>
+  </header>
+
+  <p>HizmetGetir hesabını ve uygulamanın senin hakkında tuttuğu kişisel verileri
+  dilediğin zaman kalıcı olarak silebilirsin. İki yol vardır:</p>
+
+  <div class="card">
+    <h2>1. Uygulama içinden silme (önerilen)</h2>
+    <ol>
+      <li>HizmetGetir uygulamasını aç ve telefon numaran + şifrenle giriş yap.</li>
+      <li>Alt menüden <strong>Profil</strong> sekmesine git.</li>
+      <li>Sayfanın en altındaki <strong>Hesabımı Sil</strong> butonuna dokun.</li>
+      <li>Açılan uyarıda <strong>Kalıcı olarak sil</strong>'i onayla.</li>
+    </ol>
+    <p>Onayladığın anda hesabın ve verilerin <strong>anında silinir</strong> ve
+      oturumun kapatılır.</p>
+  </div>
+
+  <div class="card">
+    <h2>2. Uygulamaya erişemiyorsan (e-posta ile)</h2>
+    <p>Uygulamayı kaldırdıysan veya giriş yapamıyorsan, <strong>kayıtlı telefon
+      numaranla</strong> birlikte <strong>hizmetgetir@gmail.com</strong> adresine
+      "hesap silme talebi" konulu bir e-posta gönder. Talebini en geç
+      <strong>30 gün</strong> içinde sonuçlandırır ve hesabınla ilişkili verileri
+      sileriz.</p>
+  </div>
+
+  <div class="card">
+    <h2>Silinen veriler</h2>
+    <ul>
+      <li>Telefon numaran ve şifren (kimlik kaydın).</li>
+      <li>(Usta isen) ad-soyadın, kategorin ve seçtiğin uzmanlık alanların.</li>
+      <li>Açtığın ilanlar (kategori/alt hizmet, açıklama, il/ilçe).</li>
+      <li>HGP bakiyen ve işlem (cüzdan) geçmişin.</li>
+      <li>Profil bilgilerin ve hizmet bölgen.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Saklanan veya istisna olan veriler</h2>
+    <ul>
+      <li><strong>Şikayet kanıt fotoğrafları:</strong> hesabınla birlikte ya da
+        her hâlükârda en geç <strong>14 gün</strong> içinde silinir.</li>
+      <li><strong>Bıraktığın değerlendirmeler (puan/yorum):</strong> ilgili ustanın
+        profilinde <strong>anonim</strong> kalır — kimliğinle bağlantısı yoktur ve
+        seni tanımlamaz.</li>
+      <li><strong>(Usta) belge doğrulama özeti:</strong> geri döndürülemez bir
+        karma (hash) olup yalnızca kötüye kullanım / yasaklı hesabın yeniden
+        açılmasını önlemek amacıyla saklanabilir.</li>
+      <li><strong>Yasal saklama:</strong> mevzuatın zorunlu kıldığı veriler, yasal
+        saklama süreleri boyunca tutulabilir.</li>
+    </ul>
+    <p class="muted">Ayrıntılar için <a href="HG_privacy_policy_tr.html">Gizlilik
+      Politikası ve KVKK Aydınlatma Metni</a>'ne bakabilirsin.</p>
+  </div>
+
+  <footer>© 2026 HizmetGetir</footer>
+</div>
+</body>
+</html>
