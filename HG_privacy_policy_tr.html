@@ -40,7 +40,7 @@
 <div class="wrap">
   <header>
     <h1><span class="brand">HizmetGetir</span> — Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-    <div class="updated">Yürürlük tarihi: 24 Haziran 2026 · Son güncelleme: 24 Haziran 2026, 17:46</div>
+    <div class="updated">Yürürlük tarihi: 24 Haziran 2026 · Son güncelleme: 27 Haziran 2026</div>
   </header>
 
   <p>Bu metin, HizmetGetir mobil uygulamasını (“Uygulama”) kullanırken kişisel
@@ -57,7 +57,8 @@
     <h2>2. İşlenen Kişisel Veriler</h2>
     <p><strong>Tüm kullanıcılar:</strong> telefon numarası; şifre (Firebase
       Authentication tarafından şifrelenmiş tutulur, tarafımızca açık metin
-      saklanmaz).</p>
+      saklanmaz). Bildirim izni verirsen, eşleşme ve hatırlatma bildirimlerini
+      iletebilmek için cihazının <strong>bildirim (push) jetonu</strong> işlenir.</p>
     <p><strong>Ustalar:</strong></p>
     <ul>
       <li>Ustalık belgesinden yapay zekânın okuduğu <strong>ad-soyad</strong> ve
@@ -106,6 +107,7 @@
       <li>Usta belgesinin doğrulanması ve platform güvenilirliğinin korunması —
         meşru menfaat ve açık rıza.</li>
       <li>Müşteri ile ustanın eşleştirilmesi — sözleşmenin ifası.</li>
+      <li>Eşleşme ve hatırlatma bildirimlerinin gönderilmesi — bildirim izni (açık rıza) ve hizmetin sunulması.</li>
       <li>HGP bakiyesi ve işlemlerinin yönetimi — sözleşmenin ifası.</li>
       <li>Şikayetlerin değerlendirilmesi, kötüye kullanımın önlenmesi ve
         uyuşmazlıkların çözümü — meşru menfaat.</li>
@@ -182,7 +184,7 @@
     <ul>
       <li><strong>Google</strong> — belge doğrulaması (Gemini) ve altyapı
         hizmetleri (Firebase: kimlik doğrulama, veritabanı, dosya/medya
-        depolama).</li>
+        depolama, bildirim gönderimi).</li>
       <li><strong>Apple App Store / Google Play</strong> — HGP satın alımları.</li>
     </ul>
     <p>Bu sağlayıcıların sunucuları yurt dışında (başlıca <strong>ABD</strong>)
@@ -214,6 +216,12 @@
         görünür). Usta hesabını sildiğinde bu değerlendirmeler de silinir.</li>
       <li>Hesap ve HGP verileri: hesabın aktif olduğu sürece; hesabını sildiğinde
         ya da yasal saklama süreleri sona erdiğinde silinir/anonimleştirilir.</li>
+      <li>Bildirim (push) jetonu: hesabın aktif olduğu sürece tutulur; hesabını
+        sildiğinde silinir.</li>
+      <li><strong>Telefon numarasının tek yönlü özeti (hash):</strong> kayıt
+        hediyesinin kötüye kullanımını (hesabı silip yeniden açarak yeniden hediye
+        alma) önlemek için hesabını silsen de saklanabilir; geri döndürülemez ve
+        numaranı açığa çıkarmaz.</li>
     </ul>
   </div>
 
