@@ -40,7 +40,7 @@
 <div class="wrap">
   <header>
     <h1><span class="brand">HizmetGetir</span> — Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-    <div class="updated">Yürürlük tarihi: 24 Haziran 2026 · Son güncelleme: 27 Haziran 2026</div>
+    <div class="updated">Yürürlük tarihi: 24 Haziran 2026 · Son güncelleme: 1 Temmuz 2026</div>
   </header>
 
   <p>Bu metin, HizmetGetir mobil uygulamasını (“Uygulama”) kullanırken kişisel
@@ -57,21 +57,33 @@
     <h2>2. İşlenen Kişisel Veriler</h2>
     <p><strong>Tüm kullanıcılar:</strong> telefon numarası; şifre (Firebase
       Authentication tarafından şifrelenmiş tutulur, tarafımızca açık metin
-      saklanmaz). Bildirim izni verirsen, eşleşme ve hatırlatma bildirimlerini
-      iletebilmek için cihazının <strong>bildirim (push) jetonu</strong> işlenir.</p>
+      saklanmaz). <strong>Müşteri kaydında telefon numarası SMS doğrulama kodu (OTP) ile
+      doğrulanır</strong> — numaranın sana ait olduğunu teyit içindir; SMS ayrıca şifre
+      sıfırlamada kullanılır. Bildirim izni verirsen, eşleşme ve hatırlatma
+      bildirimlerini iletebilmek için cihazının <strong>bildirim (push) jetonu</strong>
+      işlenir.</p>
     <p><strong>Ustalar:</strong></p>
     <ul>
-      <li>Ustalık belgesinden yapay zekânın okuduğu <strong>ad-soyad</strong> ve
-        <strong>uzmanlık alanı (kategori)</strong>; ayrıca ustanın kendi seçtiği
-        <strong>alt hizmetler (uzmanlık etiketleri)</strong>.</li>
-      <li>Kötüye kullanımı (ör. aynı belgeyle birden fazla hesap açılması)
-        önlemek amacıyla belgeden üretilen <strong>geri döndürülemez bir
-        doğrulama özeti</strong>.
-        <span class="muted">Belgenin görseli ve diğer kişisel alanları (T.C.
-        kimlik no, anne–baba adı, doğum bilgileri vb.) <strong>saklanmaz</strong>
-        (bkz. madde 4).</span></li>
+      <li>Kendi seçtiğin <strong>hizmet kategorileri</strong> ve <strong>alt hizmetler
+        (uzmanlık etiketleri)</strong>. <span class="muted">Ad-soyad istenmez.</span></li>
+      <li>Ustalık/yeterlilik belgenin (ör. MEB veya MYK) üzerindeki <strong>QR kodunun
+        (karekod) fotoğrafı</strong>. Bu görsel <strong>hiçbir yerde kalıcı olarak
+        saklanmaz</strong>: yalnızca doğruluğunu kanıtlamak için açılır, doğrulama biter
+        bitmez (onay veya ret) <strong>silinir</strong>, bir yerde depolanmaz (bkz.
+        madde 4). Kalıcı olarak <strong>yalnızca belgenin barkod numarasını</strong>
+        (MEB… ile başlayan) <strong>doğrulama imzası</strong> olarak saklarız — aynı
+        belgeyle birden fazla hesap açılmasını veya yasaklı bir hesabın yeniden
+        açılmasını önlemek için.</li>
       <li>HGP (HizmetGetir Parası) bakiyesi, puan ve yorumlar.</li>
     </ul>
+    <p><strong>Firma (kurumsal) hesaplar:</strong> Uygulamadaki “Firma mısınız?”
+      akışından firma hesabı için başvurabilirsin. Bu başvuruda işlenen veriler: firma
+      adı, iletişim telefonu, hizmet verilen
+      <strong>il/ilçe(ler)</strong>, hizmet kategorileri ve alt hizmetler, usta
+      sayısı ve <strong>her usta için belgesinin QR kodu (karekod) görseli</strong>
+      (belgenin tamamı değil). Firma, yüklediği QR kodlarının ilgili ustalara ait
+      olduğunu ve bunları paylaşmaya yetkili olduğunu kabul eder. (Bu belgelerin saklanması bireysel kayıttan farklıdır
+      — bkz. madde 4 ve 8.)</p>
     <p><strong>İlanlar (müşteri girer):</strong> hizmet kategorisi ve seçilen
       <strong>alt hizmet</strong>, sorun açıklaması, il ve ilçe, ilan durumu;
       eşleşme sonrası karşı tarafa açılan telefon.</p>
@@ -95,8 +107,7 @@
       dolandırıcılık önleme) için altyapı sağlayıcısı (Firebase) tarafından
       <strong>IP adresi ile genel cihaz/bağlantı bilgileri</strong> gibi teknik
       veriler otomatik olarak işlenebilir. Sağlık, biyometrik gibi <strong>özel
-      nitelikli kişisel veriler işlenmez</strong> (belgedeki fotoğraf biyometrik
-      amaçla kullanılmaz veya saklanmaz). Uygulama <strong>18 yaş ve üzeri</strong>
+      nitelikli kişisel veriler işlenmez</strong>. Uygulama <strong>18 yaş ve üzeri</strong>
       kullanıcılar içindir.</p>
   </div>
 
@@ -104,8 +115,8 @@
     <h2>3. İşleme Amaçları ve Hukuki Sebepler</h2>
     <ul>
       <li>Hesap oluşturma ve kimlik doğrulama — sözleşmenin kurulması/ifası.</li>
-      <li>Usta belgesinin doğrulanması ve platform güvenilirliğinin korunması —
-        meşru menfaat ve açık rıza.</li>
+      <li>Usta belgesi barkodunun doğrulanması ve platform güvenilirliğinin
+        korunması — meşru menfaat (barkodu paylaşman bakımından açık rıza).</li>
       <li>Müşteri ile ustanın eşleştirilmesi — sözleşmenin ifası.</li>
       <li>Eşleşme ve hatırlatma bildirimlerinin gönderilmesi — bildirim izni (açık rıza) ve hizmetin sunulması.</li>
       <li>HGP bakiyesi ve işlemlerinin yönetimi — sözleşmenin ifası.</li>
@@ -116,35 +127,44 @@
   </div>
 
   <div class="card">
-    <h2>4. Ustalık Belgesi ve Yapay Zekâ Doğrulaması</h2>
-    <p>Platformun profesyonelliğini korumak için ustalardan ustalık belgesi
-      istenir. Yüklediğin belge:</p>
+    <h2>4. Ustalık Belgesi Doğrulaması (QR Kod)</h2>
+    <p>Platformun profesyonelliğini korumak için ustalardan, ustalık/yeterlilik
+      belgelerinin (ör. MEB veya MYK) üzerindeki <strong>QR kodunun (karekod)
+      fotoğrafı</strong> istenir (belgenin tamamı değil, yalnız QR kod).</p>
     <ul>
-      <li><strong>Yalnızca tek seferlik doğrulama</strong> amacıyla yapay zekâ
-        servisine gönderilir; servis ad-soyad ve uzmanlık alanını okur, ayrıca
-        belgenin gerçek görünüp görünmediğini kontrol eder.</li>
-      <li>Bu işlem için belge, yurt dışında bulunan servis sağlayıcı
-        <strong>Google (Gemini API)</strong> altyapısında işlenir.</li>
-      <li><strong>Analiz sonrası belge görseli saklanmaz.</strong> Yalnızca
-        ad-soyad, kategori ve kötüye kullanımı önleyen geri döndürülemez bir
-        doğrulama özeti hesabınla ilişkilendirilir.</li>
-      <li><strong>Belgedeki diğer hiçbir bilgi saklanmaz</strong> — belgenin
-        görseli/fotokopisi, T.C. kimlik numarası, belge ve seri numarası, doğum
-        tarihi ve yeri, anne ve baba adı, cinsiyet ve belgedeki fotoğraf dâhil
-        tüm kişisel alanlar.</li>
+      <li><strong>Doğrulama, devletin resmî uygulamasıyla elle yapılır.</strong>
+        Yetkilimiz QR kodu, devletin resmî <strong>e-Devlet “Belge Doğrulama”</strong>
+        uygulamasıyla (<strong>tr.gov.turkiye.belgedogrulama</strong>) okutarak belgenin
+        gerçek ve geçerli olduğunu kontrol eder. <strong>Yapay zekâ kullanılmaz</strong>
+        ve görsel doğrulama için <strong>yurt dışına aktarılmaz</strong>.</li>
+      <li><strong>QR kod görseli hiçbir yerde kalıcı saklanmaz.</strong> Yalnızca
+        doğruluğu kanıtlanmak için açılır; doğrulama tamamlanır tamamlanmaz (onay veya
+        ret) <strong>silinir</strong> ve bir yerde depolanmaz. Onaya kadar güvenli
+        sunucuda (Firebase Storage, herkese kapalı) geçici tutulur; herkese açık bağlantı
+        verilmez.</li>
+      <li>Hesabın, doğrulama tamamlanana kadar <strong>“onay bekliyor”</strong>
+        durumundadır; onaylanınca iş almaya başlarsın. Doğrulama olumsuzsa reddedilir.</li>
+      <li>Doğrulamadan sonra <strong>kalıcı olarak yalnızca belgenin barkod numarasını</strong>
+        (MEB… ile başlayan) <strong>doğrulama imzası</strong> olarak saklarız; kötüye
+        kullanımı (aynı belgeyle birden fazla hesap veya yasaklı bir hesabın yeniden
+        açılması) önlemek içindir ve hesabını silsen de bu amaçla tutulabilir (bkz.
+        madde 8).</li>
     </ul>
-    <p>Belgenin bu şekilde tek seferlik doğrulama için işlenmesi ve yurt dışına
-      aktarılması <strong>açık rızana dayanır</strong>; bu rızayı, belgeni
-      yüklemeden önce uygulamadaki <strong>ayrı onay kutusunu işaretleyerek</strong>
-      verirsin. Bu rızayı dilediğin zaman geri çekebilirsin (bkz. madde 9).</p>
-    <p>Belge doğrulaması <strong>otomatik (yapay zekâ) olarak</strong> yapılır.
-      Sonuca katılmıyorsan, yukarıdaki iletişim adresinden <strong>insan
-      incelemesi talep edebilir veya itiraz edebilirsin</strong>.</p>
+    <p>Doğrulama <strong>insan incelemesiyle</strong> yapıldığından münhasıran otomatik
+      bir karar değildir. Sonuca katılmıyorsan yukarıdaki iletişim adresinden
+      <strong>itiraz edebilirsin</strong>.</p>
+    <p><strong>Firma başvurusu:</strong> “Firma mısınız?” akışında her usta için yüklenen
+      <strong>QR kod görselleri</strong> de (belgenin tamamı değil), başvurunun
+      <strong>tarafımızca elle incelenebilmesi</strong> için güvenli sunucuda (Firebase
+      Storage, herkese kapalı) <strong>geçici saklanır</strong> ve yalnızca değerlendirme
+      amacıyla işlenir. Başvuru sonuçlandığında (hesap oluşturma veya ret) bu görseller
+      <strong>silinir</strong>.</p>
   </div>
 
   <div class="card">
     <h2>5. Şikayet, Kanıt Fotoğrafı ve Uyuşmazlık Çözümü</h2>
-    <p>Eşleştiğin karşı tarafı şikayet edebilirsin. Şikayet nedenleri sınırlıdır:
+    <p>Eşleştiğin karşı tarafı şikayet edebilirsin — yalnızca <strong>eşleşmeden sonraki
+      24 saat içinde</strong>. Şikayet nedenleri sınırlıdır:
       <strong>müşteri bir ustayı “gelmedi” veya “sahte”</strong>;
       <strong>usta bir müşteriyi “kapıyı açmadı/ulaşılamadı” veya “sahte”</strong>
       olarak bildirebilir. İncelemeyi adil yapabilmek için:</p>
@@ -158,8 +178,9 @@
       <li>Kanıt fotoğrafı <strong>güvenli sunucumuzda (Firebase Storage) gizli
         tutulur</strong> — herkese açık bağlantı verilmez, yalnızca sunucu
         erişebilir — ve yalnızca <strong>şikayetin incelenmesi</strong> amacıyla
-        işlenir; pazarlama veya başka amaçlarla kullanılmaz. İnceleme bitince,
-        <strong>her hâlükârda en geç 14 gün içinde silinir</strong>.</li>
+        işlenir; pazarlama veya başka amaçlarla kullanılmaz. Yalnızca
+        <strong>inceleme sürerken</strong> tutulur; <strong>şikayet sonuçlandığı anda
+        kanıt fotoğrafı ve şikayet kaydı derhal silinir</strong>.</li>
       <li>Uyuşmazlığı çözmek için gerekirse <strong>tarafları telefonla arayıp</strong>
         durumu teyit edebiliriz; bu nedenle eşleşen tarafların telefon numaraları
         ve eşleşme kaydı geçici olarak saklanır.</li>
@@ -182,34 +203,37 @@
   <div class="card">
     <h2>7. Verilerin Aktarımı</h2>
     <ul>
-      <li><strong>Google</strong> — belge doğrulaması (Gemini) ve altyapı
-        hizmetleri (Firebase: kimlik doğrulama, veritabanı, dosya/medya
-        depolama, bildirim gönderimi).</li>
+      <li><strong>Google</strong> — altyapı hizmetleri (Firebase: kimlik doğrulama,
+        veritabanı, dosya/medya depolama, bildirim gönderimi).</li>
       <li><strong>Apple App Store / Google Play</strong> — HGP satın alımları.</li>
     </ul>
     <p>Bu sağlayıcıların sunucuları yurt dışında (başlıca <strong>ABD</strong>)
-      bulunduğundan ilgili veriler KVKK madde 9 kapsamında yurt dışına
-      aktarılabilir. Aktarımlar şu sebeplere dayanır:</p>
-    <ul>
-      <li><strong>Uygulamanın çalışması için zorunlu altyapı hizmetleri</strong>
-        (Firebase: kimlik doğrulama, veritabanı, dosya/medya depolama) —
-        sözleşmenin ifası için gerekli olması ve uygun güvencelerin sağlanması.</li>
-      <li><strong>Ustalık belgesinin tek seferlik doğrulanması</strong> (Gemini)
-        — bu arızi (tek seferlik) aktarım açık rızana dayanır.</li>
-    </ul>
+      bulunduğundan ilgili veriler KVKK madde 9 kapsamında yurt dışına aktarılabilir.
+      Bu aktarım, <strong>uygulamanın çalışması için zorunlu altyapı hizmetlerinin</strong>
+      (Firebase: kimlik doğrulama, veritabanı, dosya/medya depolama) sağlanması —
+      sözleşmenin ifası için gerekli olması ve uygun güvencelerin sağlanması — amacıyla
+      yapılır. <strong>Ustalık belgesi barkodunun doğrulaması yurt içinde, elle yapılır;
+      bu amaçla yurt dışına veri aktarılmaz.</strong></p>
   </div>
 
   <div class="card">
     <h2>8. Saklama Süreleri</h2>
     <ul>
-      <li>Ustalık belgesi görseli: <strong>saklanmaz</strong> (doğrulama anında
-        işlenir, silinir).</li>
-      <li>Şikayet kanıt fotoğrafı (Firebase Storage'da): yalnızca şikayet
-        incelemesi süresince tutulur; şikayet sonuçlanınca silinir, her hâlükârda
-        <strong>en geç 14 gün</strong>.</li>
+      <li>Ustalık belgesi <strong>QR kod görseli</strong> (bireysel usta kaydı):
+        <strong>kalıcı saklanmaz</strong> — yalnızca doğrulama için açılır, doğrulama
+        tamamlanınca (onay/ret) silinir. <strong>Barkod numarası (doğrulama imzası,
+        MEB… ile başlayan):</strong> kötüye kullanımı önlemek için hesabını silsen de
+        saklanabilir.</li>
+      <li><strong>Firma başvurusu belgeleri</strong> (Firebase Storage'da): başvuru
+        tarafımızca incelenip sonuçlandırılana kadar tutulur, sonuçlanınca (hesap
+        oluşturma veya ret) silinir.</li>
+      <li>Şikayet kanıt fotoğrafı ve şikayet kaydı (Firebase Storage + Firestore):
+        yalnızca <strong>inceleme sürerken</strong> tutulur; <strong>şikayet
+        sonuçlandığında derhal silinir</strong>.</li>
       <li>Eşleşme ve iletişim kayıtları (kategori/alt hizmet, il/ilçe, eşleşen
-        tarafların telefon numaraları): uyuşmazlık incelemesi için
-        <strong>en fazla 14 gün</strong> saklanır, ardından silinir/anonimleştirilir.</li>
+        tarafların telefon numaraları): uyuşmazlık incelemesi için <strong>en fazla 14
+        gün</strong> saklanır (açık bir şikayet varsa, o şikayet sonuçlanana kadar),
+        ardından silinir/anonimleştirilir.</li>
       <li>Puan ve yorumlar (değerlendirme): ilgili ustanın hesabı <strong>aktif
         olduğu sürece</strong> profilinde tutulur (puan geçmişi); <strong>yorumu kimin
         yazdığı hiçbir zaman gösterilmez</strong> (yalnızca puan, yorum ve tarih
@@ -218,10 +242,6 @@
         ya da yasal saklama süreleri sona erdiğinde silinir/anonimleştirilir.</li>
       <li>Bildirim (push) jetonu: hesabın aktif olduğu sürece tutulur; hesabını
         sildiğinde silinir.</li>
-      <li><strong>Telefon numarasının tek yönlü özeti (hash):</strong> kayıt
-        hediyesinin kötüye kullanımını (hesabı silip yeniden açarak yeniden hediye
-        alma) önlemek için hesabını silsen de saklanabilir; geri döndürülemez ve
-        numaranı açığa çıkarmaz.</li>
     </ul>
   </div>
 
@@ -237,8 +257,7 @@
         silinmesini/yok edilmesini isteme ve bu işlemlerin aktarılan üçüncü
         kişilere bildirilmesini isteme.</li>
       <li><strong>Münhasıran otomatik sistemlerle analiz sonucu aleyhine bir sonuç
-        doğmasına itiraz etme</strong> (ör. belge doğrulamasının reddi — bkz.
-        madde 4).</li>
+        doğmasına itiraz etme.</strong></li>
       <li>Kanuna aykırı işleme nedeniyle zarara uğraman hâlinde zararın
         giderilmesini talep etme.</li>
     </ul>

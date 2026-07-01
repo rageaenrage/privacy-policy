@@ -40,7 +40,7 @@
 <div class="wrap">
   <header>
     <h1><span class="brand">HizmetGetir</span> — Hesap ve Veri Silme</h1>
-    <div class="updated">Geliştirici: Muhammed Kasım Adıgüzel (HizmetGetir / APRYCO) · Son güncelleme: 27 Haziran 2026</div>
+    <div class="updated">Geliştirici: Muhammed Kasım Adıgüzel (HizmetGetir / APRYCO) · Son güncelleme: 1 Temmuz 2026</div>
   </header>
 
   <p>HizmetGetir hesabını ve uygulamanın senin hakkında tuttuğu kişisel verileri
@@ -62,10 +62,11 @@
     <h2>Silinen veriler</h2>
     <ul>
       <li>Telefon numaran ve şifren (kimlik kaydın).</li>
-      <li>(Usta isen) ad-soyadın, kategorin ve seçtiğin uzmanlık alanların.</li>
+      <li>(Usta isen) kategorin ve seçtiğin uzmanlık alanların (ad-soyad istenmez).</li>
+      <li>(Firma hesabıysa) firma adın, hizmet konumların ve ek telefon numaraların.</li>
       <li>Açtığın ilanlar (kategori/alt hizmet, açıklama, il/ilçe).</li>
       <li>HGP bakiyen ve işlem (cüzdan) geçmişin.</li>
-      <li>Profil bilgilerin ve hizmet bölgen.</li>
+      <li>Profil bilgilerin ve hizmet bölge(ler)in.</li>
     </ul>
   </div>
 
@@ -78,13 +79,9 @@
         profilinde kalır; ancak <strong>tamamen anonimdir</strong> — kim tarafından
         yazıldığı gösterilmez, yalnızca puan, yorum ve tarih görünür; seni
         tanımlamaz.</li>
-      <li><strong>(Usta) belge doğrulama özeti:</strong> geri döndürülemez bir
-        karma (hash) olup yalnızca kötüye kullanım / yasaklı hesabın yeniden
-        açılmasını önlemek amacıyla saklanabilir.</li>
-      <li><strong>Kayıt hediyesi işareti:</strong> kayıt hediyesinin kötüye
-        kullanımını (hesabı silip yeniden açarak yeniden hediye alma) önlemek için
-        telefon numaranın tek yönlü (geri döndürülemez) bir özeti saklanabilir;
-        numaranı açığa çıkarmaz.</li>
+      <li><strong>(Usta) belge barkod imzası:</strong> ustalık/yeterlilik belgenin
+        barkod numarası, yalnızca kötüye kullanım (aynı belgeyle yeniden kayıt) ve
+        yasaklı bir hesabın yeniden açılmasını önlemek amacıyla saklanabilir.</li>
       <li><strong>Yasal saklama:</strong> mevzuatın zorunlu kıldığı veriler, yasal
         saklama süreleri boyunca tutulabilir.</li>
     </ul>
